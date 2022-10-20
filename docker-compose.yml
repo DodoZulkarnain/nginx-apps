@@ -1,0 +1,10 @@
+version: "3.9"  # optional since v1.27.0
+services:
+ web2:
+   build: .
+   ports:
+     - "8011:80"
+   volumes:
+     - web-vol2:/usr/share/nginx/html
+volumes:
+ web-vol2: {}
